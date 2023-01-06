@@ -13,7 +13,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Main extends Application {
-
+/*
+<Style>
+        body{background-color: Green;}
+    </Style>*/
     String head;
     String bodyy;
     @Override
@@ -42,6 +45,7 @@ public class Main extends Application {
         try {
             FileWriter obj = new FileWriter("page.html");
             obj.write("<html> \n <head> \n <title> \n"+ head + "\n </title> \n </head> \n" +"<body> \n "+bodyy +" \n </body>" +" \n </hmtl>");
+            
             obj.close();
         } catch (IOException e) {
             e.printStackTrace();
